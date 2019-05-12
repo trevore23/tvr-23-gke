@@ -4,6 +4,7 @@ LABEL maintainer="trevore23@gmail.com"
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
+ENV DJANGO_SETTINGS_MODULE=app.settings.dev
 
 COPY ./requirements.txt /requirements.txt
 # RUN pip install --upgrade pip
